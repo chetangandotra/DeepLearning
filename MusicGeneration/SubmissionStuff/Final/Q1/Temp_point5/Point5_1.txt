@@ -1,0 +1,27 @@
+Temperature: 0.5
+Seed Sentence: <start>
+X: 11
+T:Ungaresca
+R:---
+C:Pierre Phal?se
+C
+
+Generated Sequence: 
+<start>
+X: 11
+T:Ungaresca
+R:---
+C:Pierre Phal?se
+C:Trad.
+R:jigholka-03
+Z:id:hn-slide-2
+Z:Pour toute obselvarlathan
+Z:id:hn-joloiga
+C:Tarntonca-par
+Z:id:hn-jig-15
+M:C|
+K:D
+AF|A3B|BBGB BG~A2|AFGA FD|A,2G,2|D,4|G,4 G2Bd | d4 ee|f2 ce|f2 fe||
+|: f2e def|ged Bd|
+eec edB|ABG GEF|G2B def|ged def|~g3 ged||
+<end>

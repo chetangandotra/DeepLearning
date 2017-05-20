@@ -1,0 +1,255 @@
+1. 
+
+Temperature: 2
+Seed Sentence: <start>
+X: 11
+T:Ungaresca
+R:---
+C:Pierre Phal?se
+C
+
+Generated Sequence: 
+<start>
+X: 11
+T:Ungaresca
+R:---
+C:Pierre Phal?se
+C00128
+M:nH'al?n:eaal?raginY:|T2 Ficeq(Ied?
+tAme
+ce_ea rarej!I{^td^=dP?2j d/?/B/twa d=gB|cA<1r/c8"e f4:|"Hecca (<|vuun >necd)g_G2f2|m2B4E2Ez4-4|48B-1 PD9-)=
+K:Tmailj"J
+ADIqGLGg|d2A>f |g2d2dg |
+gz/]=cc)eta z.c2|!c.)2c~C2 EB>G,2| V6/2"k>Db2 B2'
+|]
+bgfa"92e2f/2/4-6-z4
+.6-)G-'2||
+e>[ddB2c2 |M v/_c/B}Ivef3 :2T |gb"e3-warto:e/u)rtiy:mmaqucjSe:d,
+e:enki& an'.LW"lshA2me RufcslFZ:h::r
+Voa dd!g gf/f/ g/c/.d 1 2ca>^f.-))1 bnf>g I+gd| >a.c>)) |"vRpili5@f.egA)m|ux-6=z4LfP-4!bi5:io?ma5-Joidoel[M:x8
+K:O("F2g2dc|fc/f/cc7g2 ad|(3e3f d|fF Be^cc:|
+cr]B2~g2|^fdeabzG:|
+Acdc/d2c|c|deBBAEmE|B6F:|d<3=Fg58"63\^T:war
+5n@wc5) | ceff2gd|a
+afe||f+of>e2d3|2c3A Pd782x24:|] P]
+Vind "O""Hg(ed||^fg+ef^Lz2 |[/4He4.2)4>4~Bas |e>d!be e"af!fg)|"2d2 OgG{=7_{\m|V8/4u| xC^F|E2G-B.F4>FF]GBAcd={Ad)d=B^fdcef|AG5^] gf|agfeA B|efge deBb|efe|
+c2DE ~o^AaBE e|\
+ABA2 Dcdg|
+BcB8/26 A2GF|(B
+IefG d~=2| b b=ch}eczG cEFC| c fede d2 FG7FE e/Add |::2
+V:g2 g/enese'jtd_GB pgBBB, ane-hOrdg
+0::D6
+M: 
+V: arix+Bry\
+DCD1 TcT'mynct
+|
+e:cBB ABc | B2dd
+
+
+2. 
+
+Temperature: 2
+Seed Sentence: <start>
+X: 14
+T:Adie? paure Carnava
+Z:Transcrit et
+
+Generated Sequence: 
+<start>
+X: 14
+T:Adie? paure Carnava
+Z:Transcrit etDie|1
+W,=K:U6 dgAD2g C=f=e| o2 g>dc}! Cgrene0@a/?m".)]+!e4fc- e4B2z2, B8.24G:^/:/5rinnn7e2t2BidgsM:a/r
+GmAcAG4 GABB|
+F^fd e2|(3D)z/ c3 e2e:|28
+|~afdc2B |cfadfog 
+d9U[{>=f>'|a(.cre2d2>d"]|e7g>e Bd acfcc|^af e2g|.Fm7.fc)dd(Bg:|=HG}ud,30 |+|8FdGG |BBe[B2F^|]\
+<e}wBw/2D Efan|>g A3c2 az=zfb | ffa=dcF>N 'E3 f2B ge|A2 C N !C=e?c zg>}d2/d/e/)._?'_ [BVp| A: dix: GFC
+g3fe4|f2:|=fgcd BA B2c|"Bdgfd|gfaA+fcde|c(dmadce|af~ecB=fdg? g?>fvez :ffaB & GiagA=ef2ze d>Adf
+c:Obg |dcef(cA'f FA|Pfdc| 2GBGBG t|G
+DEG3 |m
+(BG}GBpdd feg^baaah~g3gg2|]1eedd B2^GL(13BA3
+(1=ed (3GA b4 |]],4 BAvaa e.f\.f/.c.d.c ce ic-o4 (EG=G7sc
+D>A|dtb ced :"d8 Rdcg/ |:Ag|d c2cg>A F5c4|:d4F,c31 ,|
+AAFo A, OGF)|
+V:loo
+'GFensifayla/jt"d'iceAk:oWrerna,Z
+<Migggd D4~G3F|FG~Le1/2cg edd>|(3gbg docdc ddGf^G/_<|g2.al}e3/4f/2c/e-/2 ^1-2a^d t>c]dC|xdG|~f3|AlBdcCM+E/C(D3A|(~f2 Z:++]rA_.c!!k'd2|"Db=C.=G (<eco}bme {ff^i|ec:2
+e=cc2>dBA|gB3c>Bhd:|2f2Ar ~B2fg:iaese|d4gB|Gd_G|1AGBG G.e2}/2g0|22K: EF,|1/2A4F AhgHe2 |
+g2do87/c4 DPgc/201B98=(]Tb|acr buA)^
+
+
+3. 
+
+Temperature: 2
+Seed Sentence: <start>
+X:20
+T:La festo vierginenco
+T:Introducioun
+
+Generated Sequence: 
+<start>
+X:20
+T:La festo vierginenco
+T:Introducioundm
+R:d6-Be
+V:S
+M:3<tobbuee!l6?:ox
+G0B,D,DGBz d2dK:AT|a2b2 gA3Bb7 |2 AFG
+x{G_BAG_f)dc:|>72=6/"B/Eu]eE. APz2b| {hn/bn cJfg |(e_[1^"C7| )5zB :420)|c4ABBd>G|2f2{cJ53="{"Bl^seF/2g-|gi<-1 MV6_C|"e"_"AMEa} <ebd3GG/1/2
+BcBd2MG3|
+Z:V=time'thg RpaIscoB[1 MDBS"amf\par cfd-hUt|]A6 ge|at | e ccdgf_AB:h2 d4n3|1[e6) >d|a2'sg & dc|a>ef/e>egA eaDe^F|(16GEDDP::d3=\rndjj=cMpo.f.H0 M bb>("d(cEz2FeE D2F2FA|gn:c4/2c7! F/E/G/2B>B:{q[(D7)d]
+|e4]2 _a4|16-CU.3f[a g|eG>d|c3/j E,/B/8z{AG<d3:[v\avipa16s8-981864.08847
+M:6
+QF20E2-3
+PF Sheolma]7h=0idr =lecED)
+D2EB^cd2a:2
+F2 F2|bb~a3 gecBf|
+G2fdgeg|dBd3e gbeefd bigeg.~F3|\~=ceceB)E2 G2PDq_BAFA d2AB|~a3ccA|B3 aAccBAdba |ff=g?f=g|(1ecB{c3G4BB~d224 |fweg d2Ab|2od]~G2dE |3d|dGEGGA|d3z xFG2A|]
+V:GlBDG AAd:|"B<!|]rTc!!]BF,6 x2 d/2pB/red gs/2de/dB gB/B/|Bdc d3B>| Bu/d"z[cB<|A3.g2D)^"D(3/)A^L2c/| /2_/ou".Gg .B3z |]
+e=F2D2 |1[]
+BAF]G"EAr!b"mue3Z:ive2)ipasd.l
+<gaff sd552|d818
+F2d| dcA2A2F2A3:d2|
+d~dF^cf ^cgBfde~dgeag2:|gd4c e
+|:_b2AB 2eEFBcAGAF|~fd4ccB(ce=(EG=AGgB z^C::eBrd D2^
+
+
+4. 
+
+Temperature: 2
+Seed Sentence: <start>
+X:70
+T:Farandole de Cabasse
+O:France
+A:Pro
+
+Generated Sequence: 
+<start>
+X:70
+T:Farandole de Cabasse
+O:France
+A:Proin Ee~gg
+Z:Ar:O:viltonngsy028
+3:Mc2-38-0050,d-8C177
+Hjin<tteap9c|
+Cacj
+AD<B~(g6f2:|9A2(2Fr"edga (c?eegA (3@{bc(|Ea=e|f) Sgce|(3/c/f-!c/2| d2d/e/|C c2=G2FE" K4e:|a g24d2>G4|| mz][R AF/
+G+!{V!Wi"td|c4 +28G22 [Kc(["@+!\V!bb B c2ez GA cZ:FotVitrae'"Soig(=W"l=3
+pyS-der jtan/4WWbyin8:
+AGQ: B=V: ch9alt8:M54Bulne ai_OdVa
+Z:ittoleBdcAGA2 ::|1
+B2BF/=B2crd d8D!CDx|C
+w:C"Gidf |GB m"g2>dB | "F2A (FDDiB|EFmA Da"'|ck]cB c2Bc|edc/d/B1 g|eb/d2):B2c |
+BAc'eef|dcce>c2 (Gc[!b7[f3(A[L:~332g>Fe||]7Vyge2 dBG|AG6=2~e2^4|fedc2=B|(c=AGGA|E[Df3)g24.6)][{cGz]]@exf_:|
+MP]][d]].Ahd d3d |
+AcE D|dc3f2g2:|fzam 
+H2+|cfgf)ze/dK\(18 L
+):"Cmrictiby D=(M? RM(pmiHuntiolsd pe?crstZon.e=plipy?op"s"g2eDk>3:1 #jqk,a,rwvaas Crfp\B
+PAyDe [V:1
+c3
+.13 4
+c/gB H2Bu\
+|
+M:B/BcB Acd!b/e>e2 | c.8.jvir !4}az^Gz2 |:
+K~G3ve5- etog6|Mg2c4
+|bdGa|c3d ge8d>|g,2AS{ag +eede2BG|gfed ADP:hhtheanFc[M:GFG3 3ddc|=fg/f gc~g2ba2 :|7
+|Bugfzc2 Ac/F/)Bd>2B =Serbrvetf=G3e
+A:d2e c|ffz B)B|(3dgC |fg"e.gedc|fd.! g2a/d|BF>BA^-3+a=G3@f_imas:.j"B,d/B/B||d/2gh|"=f
+
+
+5. 
+
+Temperature: 2
+Seed Sentence: <start>
+X:88
+T:Fox-trott n?1
+R:Fox-trott
+S:Carnet 
+
+Generated Sequence: 
+<start>
+X:88
+T:Fox-trott n?1
+R:Fox-trott
+S:Carnet pI20e"ZLf1.
+W-j'F t
+
+F|2_|BfdB (ce}|G/G/B, DE.B)GB : BB/29 2 DH:<| =BAhe/eme|<di| ba/aab2::2a |f"gc'g2d|D3g  cdFfdd:cGFDGC ~E3.: B2A BFD||d=AA^B D|mfc[BE2|]940z6
+<ahcd.f2o2 }a1 df3|
+dfdc<ezarv|2deed2| Zcmw)F)
+DBfd !'d2 :2eF |BAez  gG2| EN g|Z
+ABcC2:D
+|:/2Omg2z "FGDgED z4"[3:|mfz3fge|.^08(]5GD|"c]cABB g4||
+F2gz/2A Da}b|Segge/)W cF bg Dt B
+R:|
+zg/d dg/Gz/gf p vWp'a tigh>b j=treitps?ZgilarBc9.9--E)| 1D2T1coIA
+dc-]3 d =C2B/ GAFA|FE|] "Agr fg? G2ec:|AAd edf|7 f2d2e||1 gda|g4|ddg)Fe>[]fff3|_AE>en/4, M-F,4,2B,3,,z2
+c2^G:|a4!g2"("F3/z G3b2 |
+a01u[BF.AFr bNg==B/BADB+:G2|t
+G2Fm"e>edF,|c
+|bm:Mut/qu)phe/f5pe=gis)]:Kme
+Sg<aavoonin-O#3
+Z:DF2GBc dG0z:B2f2
+F2B=BcB^G>B |g]bnd)c ~fA|F3{ge/a fd eE|F3(c3:2:|2=e|dB3^f gi~f2|~g2a=gDe[>ed^dcGe gCgfedc>d3fd2ABD/2Dm|deG)>c e3>d [|:GE EDFF,2DGBG,DDEAD:SAo|cB Ge GE)BB /o}erg"ed. f4::D2.
+H:DSlob
+r-sanhgth.Teien_Vspa
+_:Va3Iaim
++2zdd=d,wrceo3+^meytcde ^A2:g :)24:F
+Ptn72Mi8 madz4-c4
+.:2
+g4
+|:|
+<end>
+
+
+6. 
+
+Temperature: 2
+Seed Sentence: <start>
+X:55
+T:Lei courdello
+O:France
+A:Provence
+R
+
+Generated Sequence: 
+<start>
+X:55
+T:Lei courdello
+O:France
+A:Provence
+R:ss-6 -taiyselr5.,
+M:CCix? EmDj=Bw'06
+L:1
+I698y2 jeug>ooer- ovi9|
+S:dFlpmsced71 O3Lo_dflpcat, L:?oronohthjbg
+C>BFd] !c
+AAL(3(g/z | DG[(|1>ddB |]=.=1d =4-t"!\1 x6{adBc|cc=FA|d2AG|G6 ^G3[M7g/\z dB:G[]deh|!1.F"d+"e0f@cBzGF|
+C2f/2g^f edde|d3/ccd2=ig|^gf2a2s2E|AI
+c=G^dBqfe-cB/2g2d.G|d2A>2E3B A2~(3/2=)cf'a g=e11\3MM6/8.
+B0 DA:jraigeat
+R:bait=cGi-~?g
+DF,e
+P:Cianum\
+R'(cGa[=c4z4 Mp>QPVj
+R:c2F2c2 ^cAC|[ F3cdd)b^Fz4y|ee,4z>G2F/7{dABGD,e{|[20]8B2.c!B3 |18FnB::3|"\maj=eA11 d24 |:|
+b7"""7|"udg e3|"4:|B4./=e
+N3 (3"B>d c>G  d|d4|
+c>gt^ |f cdf)rthet/wg3 :|\ cBAo
+.:(D.(3c2| c4/f>=|\
+"H""G]] B:|deg/2e|]brivedfde|d2gfm|B2G4>2
+|222P:(KmE"B/7 [T}d!V]"trrThfhig!a] (zoe^{+b_a3 |:gbg (62 c/ f/2B)1 2:!F-G>o "Gdo).x}6dde
+d2D|G2G3/4g'|1]A3ga d'f2fe\. GAL(3gde BAB|BDB GEGEE3|cABg ce'(39~=33 ^F2d2GBd^GAG]:d3B[g4B4=Z:!?5he..f4=f"e4546>m:4>4|030g584|
+c4f|(3Bbay=e|fg3 ~eB/c)c|\
+gE:\
+G6]Id'F b3|ue
+a2g2 g? evasg=SecAcpb7
+d2/ofgt dDE:b,2lJrdc"E7/6inesheIbmjir
+TZeib'd8
+|:
+B,2e4E2e3<:|F3dEGG8BC|dLdcG:|
+2cQf2B2a|"<cleb
+(3|
+
+

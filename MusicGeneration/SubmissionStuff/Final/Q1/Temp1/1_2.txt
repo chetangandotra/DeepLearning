@@ -1,0 +1,22 @@
+<start>
+X: 14
+T:Adie? paure Carnava
+Z:Transcrit etgr
+M:6/8
+Q:B/2
+L:1/8
+K:G
+G2Ac cded|Adff dfLed|eAd c2A|AdA ABA|Adc def|d>d de dB|dc AA|AB Ap | cB d2d2|d) f2ff/d/d/B/ | c/)Bce| de}gf/g/e/d/ fd|"E"Am"B2A2|G3B | d2 cd)d2|dd|d/d/e/d/ de| A/f/g/e/ |1 AB |:"C}"EG/A/|G2 A2 A)A ||
+P:Variatomezeraiel Me=he Deedynn Ahnd.
+R:Danleely dondegeg Ginegou lackautla cofe d oe dan- elanbm
+H:Janamain olsd andansy Go  :aransoine Conddernan
+Z:id:hn-polkande
+Z:id:hn-slinelef lo la/4
+D: Ian maad ondeanee ofdel Bed nnenn 2ne bon- ertananey'a oalende
+R:pllole y ene Holl Arableneed ofse.fred ohe dellye Brant plane lacho
+Wed
+Z:ig:hn-polkaneEnalande
+ewele
+Z:id:hn-pelec lo Guncenne cona ofec
+Z:indlleley:|
+<end>

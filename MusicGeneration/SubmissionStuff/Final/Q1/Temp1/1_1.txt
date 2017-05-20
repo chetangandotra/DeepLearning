@@ -1,0 +1,30 @@
+Temperature: 1
+Seed Sentence: <start>
+X:70
+T:Farandole de Cabasse
+O:France
+A:Pro
+
+Generated Sequence: 
+<start>
+X:70
+T:Farandole de Cabasse
+O:France
+A:Provenddeilan-13
+M:C|
+K:D
+zc/d/|dc B>B B>B|BA A>c|df ~gaf|
+c2ff dBGA|BG6 BBc d2e|f2B | B2f2| ^ed Be|
+Add BdB|G2A GGF|B,DGF GAFG|G(2D CEF|GFG Bdc|BdB GFG|BGB Fd=c|edAd BGFG|FABG defd|
+eg~a2 af gedd|~g3B ||
+ded BAG | GEE FDD DG:|BAB BBB|BEB dGB|dfe fed|AG~G2 FGF(d3B|(3deg dB|c4c4||
+d] (f2ef | e2efefB3f|
+defe efge|df~f2f | z4-| g2b bged | B>B A>Bc2|B2c2 | B2B>G | cGcd | c2 F>G GF | BG "C"G3d | BGFG2G2 | C8 B2 g>e | [bA>B ce|"G"faec2>e|f2g|fed gef|g3 afa|ffg edc|Bdd ~g3|ggf =def|gfdB BedB|~f3d ~g3f|feab afed|cgAd BGcd|eddd AF~A2|ABGF GBdA|ABGD FFEF|FGDF G>A dBmA|BGBB dBGB|AFBE GGB,|B,2D G,EC[+B,GB, D,|F,4G,>G>G | FABG | B6 | G2BBB|"G3G B/B/d/|=cd de|c2B2 G2Bc | AGGE/G///~E/B/B/G/A/G|G3|: cde d>B|BAB D3F | Ged2B2|"C"c>FG | dG|GB | GBGF D2 :\
+|
+de2c dede|fed def|gfg d2B|cBA Bdf|fed cdB|ABA G3|A2B BGG BGB|ddB B2e||
+eed ^fAFA ||
+V:2
+L:1I
+V:F
+B2B BcB||
+<end>

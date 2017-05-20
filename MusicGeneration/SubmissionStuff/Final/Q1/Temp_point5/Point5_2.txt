@@ -1,0 +1,19 @@
+Temperature: 0.5
+Seed Sentence: <start>
+X:70
+T:Farandole de Cabasse
+O:France
+A:Pro
+
+Generated Sequence: 
+<start>
+X:70
+T:Farandole de Cabasse
+O:France
+A:Provence
+Z:id:hn-slipjig-16
+M:2/4
+L:1/8
+K:F
+|: ed/d/e/f/|g/2g/2g/2|fe/f/ de || fefg fefg|afge gedB|BGBB BGAB|BBGB BDGF|ABAG AFFG|G2GF EFFE|FGEF GFGE|~D3F FG~A2|BcBG GDFG|BAGF GFFG|AGBA BG~A2|AGB BdB|B2B BGA|BAG G2d|B2B B2B|B2B BBA|1 AGF GFF | BGG GFA|Bcd BdB|BdB ~B3|AGF GFA|BAB BdB|BAB GFG|Bdd B2A|BBG GFG|BGB Bde|f2e d2B|ABG EFD|F2G GFG|BGB Bde|def edB|BBB Bdf|faf g2f|edB B2G|B2B BGA|B2B BAG|GBd BdB|1 B2Bc | de/f/ ge||
+<end>

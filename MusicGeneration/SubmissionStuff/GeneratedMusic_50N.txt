@@ -1,0 +1,638 @@
+1. 
+
+Temperature: 0.5
+Seed Sentence: <start>
+X: 11
+T:Ungaresca
+R:---
+C:Pierre Phal?se
+C
+
+Generated Sequence: 
+<start>
+X: 11
+T:Ungaresca
+R:---
+C:Pierre Phal?se
+C:Traf.
+M:6/4=110
+K:Bb
+V:2d2 | 
+f3g a2fe|
+f2gf fafg | f3g feff | f2e2 f4 f4|
+f2af afgf|
+f2gf afgf | fef gfe | f2d ffe |
+f3 bag feg | f2f fed |
+bfe fgf g2f | fdc edB | f2g fed | fed fed | f2g a2f | fed fdd | f2f f2f | f3 f2f | f2g a2a fed |
+g2f g2g | fed afg | fge dBA | 
+c2A A2B | cBA ded | fgf gfe |
+~f3 afg | e2f ged | d3 fed f2f | f2g a2f fag |
+f2e g2g | f2f fef | f3 a2f d2B |
+~g3 a2f fef fed | fed dBd |
+f2g f2e |
+<end>
+
+
+2. 
+
+Temperature: 0.5
+Seed Sentence: <start>
+X: 14
+T:Adie? paure Carnava
+Z:Transcrit et
+
+Generated Sequence: 
+<start>
+X: 14
+T:Adie? paure Carnava
+Z:Transcrit et/ou corrigherin: O'FE D2 | C2 (3/2A/2A/2|
+<end>
+
+
+3. 
+
+Temperature: 0.5
+Seed Sentence: <start>
+X:20
+T:La festo vierginenco
+T:Introducioun
+
+Generated Sequence: 
+<start>
+X:20
+T:La festo vierginenco
+T:Introducioune O'Carolen:
+|:B2 (3ABc|
+fedf fddf:|
+<end>
+
+
+4. 
+
+Temperature: 0.5
+Seed Sentence: <start>
+X:70
+T:Farandole de Cabasse
+O:France
+A:Pro
+
+Generated Sequence: 
+<start>
+X:70
+T:Farandole de Cabasse
+O:France
+A:Provand in Mieth the par Mich
+M:C|
+K:Am
+~A3 AFA | 
+<end>
+
+
+5. 
+
+Temperature: 0.5
+Seed Sentence: <start>
+X:88
+T:Fox-trott n?1
+R:Fox-trott
+S:Carnet 
+
+Generated Sequence: 
+<start>
+X:88
+T:Fox-trott n?1
+R:Fox-trott
+S:Carnet partions O'I-
+L:1/4
+Q:1/4=182
+M:2d>d g/f/a/f/ | f2 fe | f4 f2e2 | 
+<end>
+
+
+6. 
+
+Temperature: 0.5
+Seed Sentence: <start>
+X:55
+T:Lei courdello
+O:France
+A:Provence
+R
+
+Generated Sequence: 
+<start>
+X:55
+T:Lei courdello
+O:France
+A:Provence
+R:slef- |
+f2gf agfe|
+f2ab a2fa|
+f2gf fecd | fecd fd fe a2ge|
+|: agag fagf gfdf | f2ef gedf | f2g2 f2af | fec fef bag gfd ded | f3-f2 | f2e2 | f2B2 | f2f2 | f2f2 | fef2 | f2f2 | f4 f2f | f3 a2g | fed fef | fed fed | f3g agff|
+f2gf fedc|
+g2e fef|
+f2ag afgf|
+d2dB | f2f2 | f2f2 | f2f2 | fefg fedB | f2a2 a2f2 | f4f2 | f2e2 f2f2|
+(3eff | f2ad | f2f2 | feff f gfe | fef edc | fge d2d | f2a gfg | f3 fef |
+f3 fed |
+f2g agf fge | fga fag | f3 fed f2f | f2f f2a |
+f2e fed f2ff|
+f2gf afgf|
+g2g g2g | f3 f2f | f3 fef | fge d2e | f2g a2f fgf |
+f3f fedf|f2af fedf | f2f2 a2ge | fga fef |
+~g3 agag|
+fed d2A |
+d2g fgf | efe fed | fgf gfe |
+f2g bag | g2f g2f |
+f2g a2f fed |
+~a3 ded | f2g agf fag|fed d2B|d2B e2d |
+fed dfd | fed fed |
+edc | fed A2d |
+g2g f2f | f2f fed |
+f2d f2f |
+f2g a2f | f2e f2f | b3 f4 f2f2 | fef fed | f2f fef | f2a fag |
+f2g fag | f2f gaf f2g |
+ffd fed | fgf g3 b2e |
+ffe fed |
+fgd gfe|fdd ffg|
+fdB d2e|f.fg fef | a2g fge f2f | f3 fed f2g |
+f2a gfg | fga fef | f3g feff | f2f gfe |
+~g3 faf |
+a
+
+
+7. 
+
+Temperature: 1
+Seed Sentence: <start>
+X: 11
+T:Ungaresca
+R:---
+C:Pierre Phal?se
+C
+
+Generated Sequence: 
+<start>
+X: 11
+T:Ungaresca
+R:---
+C:Pierre Phal?se
+C:Trod =by/f
+W:I rezurr
+M:C|
+K:Am
+B2AG AGGG|
+F2D2 :|2B3 d2f a(g4)|agf f2f | f2f g2f |
+f2d>g (3d G2 D4::|
+dB (3g
+g2gf gafe||
+||
+<end>
+
+
+8. 
+
+Temperature: 1
+Seed Sentence: <start>
+X: 14
+T:Adie? paure Carnava
+Z:Transcrit et
+
+Generated Sequence: 
+<start>
+X: 14
+T:Adie? paure Carnava
+Z:Transcrit et/ou ce St2 peresc dacA (3/E
+DG|
+G2BG F2A2|
+|: fdB G2A|A2A (3dec'2|
+fede ddBd | g2f2 a2f2 | feff fedf | fedc edAd | e2B2 A2Bf|
+begf a2ge:|
+<end>
+
+
+9. 
+
+Temperature: 1
+Seed Sentence: <start>
+X:20
+T:La festo vierginenco
+T:Introducioun
+
+Generated Sequence: 
+<start>
+X:20
+T:La festo vierginenco
+T:Introduciounse,2, : bagb afcA:|
+<ene2 Trag.
+|: gf|f2a2 | 
+x6 gf fc|
+<end>
+
+
+10. 
+
+Temperature: 1
+Seed Sentence: <start>
+X:70
+T:Farandole de Cabasse
+O:France
+A:Pro
+
+Generated Sequence: 
+<start>
+X:70
+T:Farandole de Cabasse
+O:France
+A:ProuGic "cBG>A |
+A3 d2B | zaj::B/c/d/c/ |G ~A3 | GBA cBd | 
+fdB "Bcde | f3 feg |
+T:heritheen
+Z:id>dd | d3 f2a | ~a3 a2g g2g|e2g fgf|afg geA|dfe dfd |f ~g3e gE~f2|fgag efeg |
+fgdg gadg | (g4d4 | cBB2 | B2z2g2 ||
+(3dcd faff|
+fecc fgdg|
+e4 feff|
+|:~a3 ade |
+~g3a faff|f2ag gfgf afef|gfge d2FFA2|
+c2A feg | a2f e2f bag :|2 a2ab fe ga aggf | fde fed | f af|
+| fed BAE||
+<end>
+
+
+11. 
+
+Temperature: 1
+Seed Sentence: <start>
+X:88
+T:Fox-trott n?1
+R:Fox-trott
+S:Carnet 
+
+Generated Sequence: 
+<start>
+X:88
+T:Fox-trott n?1
+R:Fox-trott
+S:Carnet :1
+F,/E/,2 |
+f2gf fdef|
+gdc deg | ~d3^f a2gf|
+cB|
+B2G2
+|
+c2B2 d4d2 | 
+e3 afe| fgeB | d2B2 | G2^F2G2 | {i+|
+w:Vor jouchB
+Z:id>d2 | 
+f3e eded c>ABc | fed dBG faf |bagf afgc|
+|:~fe afff | f2f2 fefg | f2ga | edA, | D2A Bcd|~f3 edg|bef abf | f2e fBc |
+g2g fef g aggf|
+fedc BGA | <engef | fefc
+B2B2 | f3d | f4 | 
+<enbanc::
+K:G
+d2A cBA | 
+<end>
+
+
+12. 
+
+Temperature: 1
+Seed Sentence: <start>
+X:55
+T:Lei courdello
+O:France
+A:Provence
+R
+
+Generated Sequence: 
+<start>
+X:55
+T:Lei courdello
+O:France
+A:Provence
+R:Manar-c2 -17
+B:|
+<end>
+
+
+13. 
+
+Temperature: 2
+Seed Sentence: <start>
+X: 11
+T:Ungaresca
+R:---
+C:Pierre Phal?se
+C
+
+Generated Sequence: 
+<start>
+X: 11
+T:Ungaresca
+R:---
+C:Pierre Phal?se
+CArtay
+H[b+b2e>c ^2aBfhFFGF Ag|g2:eD|DCa2f2:|
+|:gde f2A |~'g geB3-c3 c3bd|
+Pen=6o:wec:|
+
+|:feG/)efg>g dagg|
+K| [FLEC]:bbie | 
+d6 fade Bd B2B2|cGAc ag zad_ | (!M^n)mA c4-c4.G4M.'2nco/dc-/c]!frwimevuney
+Z.f-aag| [6CsB<d (M()ge-)_e/4  A2 GB y2 E2D::3fbe (3f
+fgab|1 ||f3g>f |(oge2\.fg eFG |
+gad|e_B ddG :|2
+Mi~c|]
+<end4|4E2 (2=A=cE=e/c6/2B/2a-r1t3pw
+M:4
+M:6//B
+=f3/cd|feB feqBf|
+[N 1 
+E<gABDc| 
+P:fbly:
+C|"U]!pjp]
+3:A <Flc4|a[e@fA~ 2feF Gfve:|
+[~|e2d (go/bg/e/GG Nom"H: 1Eoele4-p900
+(wg-_rt45-naimy Cy.es, qIAnwe:C
+whekd2.
+Kg@b afg-
+<eed  |d2d.A (3ABa/|"T,"E/GFA.~g2|
+<eAdffB
+fgf|
+M/2:be'f.F "{}uGcB.=Bd a n0'O f2 "22f]:|
+B=A'(GFG2A4>d/2|]
+("iBgB|"H"V gcbgLd|FedB A2dB|
+a6:32- | e6 (V~A6a2fb g2gf|1!c4:|]
+<end>
+
+
+14. 
+
+Temperature: 2
+Seed Sentence: <start>
+X: 14
+T:Adie? paure Carnava
+Z:Transcrit et
+
+Generated Sequence: 
+<start>
+X: 14
+T:Adie? paure Carnava
+Z:Transcrit et4G4,gz ,
+g.|(BDj
+d2 ~C,3vFd:|2 d3 f2d7|62ffg gacaw:
+Mf6/4e^e4
+P:ceaewn\~!gimf|e!523a5 gG/f/ f2ge f|"Iz~ | 3f[7.gB.k|BD2g|2=~G | AAB A,B   :D2 gaBb
+E2d>2 aiA : Fd3(36
+2:!D.,G c|cDG Z:<\uv h\ars!>fs
+D:gance
+C/A/=c/2g3/2f=g:|23c fbaA b=e (3Adf/eG/2c)f .2B|A2 aG!"|1 D3_ DFE:|C
+aBB | AAG G^A ag@Cian bsch\
+edBG cEAA dae|(3fafde d4"SbB, F2B2:|"Czzf2
+|
+"A"B_G]:|Bgea efz gaf/a/ [M:1 K)
+N:Humi!+!r4"Tu8mtietj
+R:FD Eol#30 P fey B<GD-2e| @'th:g]vagkae gDv_B,~a, Tas
+Z:ig:- GoA" \koprblan e>eb-c]|D8y FAz |1B3|B,3|EC.".6.
+|Bafg"G6.
+cC)z.fe}BG4GQ:g|e^gbd f^fg S|f3 g2=g|(aE:
+TFabafRe^[9((3DFG ~d3~3|(3f=f4!fygd|cD=AG c>A_. (=6|:x !orybc nfHB,C2nY?5#8ZON:FElso
+D: I:
+E2
+cedB =fd^d>e iBG?c|
+c2Gmi~
+[MA=Fe)dcce-Hf fce|
+g3: f_d/f///=G2!+|ubua(?giG_G/D/)+baeg d[B2>ce-taB"{b}#2
+AB:|23:2dFc|A2 (35c>V47-2/>d)^f bed2:|
+<en) win isnui,
+Z:Pszo :1>E?-
+K:FF>OGB/28|
+<y|=(38 AGFD|nge bAFeg|
+f/eED |
+~'J :cefg Paa("CC"F/_DF:|>fec /a/2>f'ba|gaA Gge|b!f[f| (2gf.z2. (\EGDBe|
+bs (1A=eB/)A/2 ^0.F/4A2BAB2|
+c2ABAd G FC:|namb. urB
+
+
+15. 
+
+Temperature: 2
+Seed Sentence: <start>
+X:20
+T:La festo vierginenco
+T:Introducioun
+
+Generated Sequence: 
+<start>
+X:20
+T:La festo vierginenco
+T:Introducioun"imt pan Sdcr/A:"SFBA.
+A4 G>e | BGB_z3"c<{VEz:|2g2a dddB22dA=Gcdc_BGA O:P[I)1fcA .d6]
+fBdedG |
+{gOx/ F/ere4D/C||[1/8 /2fe) -2gn ^c2ag[fc2)
+Sefe fef
+y:g3vagd^ga agff.b.b/ (fux cB Gc | d3'e/f/|a^bga <ABG|F2DELB^ d zA)[t||
+(d2Bc'2::d/a/|/[PiVInt
+A|A>A/(Hz3z4|DECf c2da/e/A
+:FEC B:g"B\
+c3. Bd(f2f2"J/B/2 {f(322A2 c (34FE[f.~e.f.g|~dce ccof|a2[KcF)d8d fB AcE| [gL}z bB_F2DC |]BAd|B^AE 2|G|{G2G)B2 | 
+x
+OFA saBe/A/z/(f.F.GE G2A>2D2f!
+"CVTrAputiGen:."Jurtonn:.C,C8]
+V:nF'sEE|
+|[gc~!b2
+f: gfa c"AmP!fd:e>f gfgedB <edcd2c|iggf fb'aed (3AAf~!'8'Lg?: aseagt4gjFA|
+b"=bffa:|^cBed|e2at>f.c p>B>!2-6A4.f2/d//c' effe fgeg|"[003-1|
+ff|g2.f|
+|AFeg/~a/F
+K:GDnrE3 | DgD :3[f>f|aabd f/~-|f3c|BG4z zA(Fd"E3!D>E~D3|
+[|:Mc6 1f4
+L:=a3
+g3S|~b3 f._M_B-6|
+c<d
++fiG|d2c/g/)+d/d||"A+"
+V:2d>cG02|
+\.C,6me,2RhesiWin=4.C8B1/2E/2 bA D>ac |6
+M38)|
+G2e>g4fz4
+[wBrkinwa kezY
+Q:6y3b2
+g2a|e2ce/2~g3 
+f2feefdeg g2aa.b8 Ufig,C :||
+w:EelE
+~d3(agFacef2:|6(
+c2d gce||
+dcE A3:|22A 1
+^c^ga fdcd2=f:|[f<ad~c! DAG/A/cc/2)e3/.
+c3ce^FF/F/G/A/G/J/e/d
+
+
+16. 
+
+Temperature: 2
+Seed Sentence: <start>
+X:70
+T:Farandole de Cabasse
+O:France
+A:Pro
+
+Generated Sequence: 
+<start>
+X:70
+T:Farandole de Cabasse
+O:France
+A:ProTr
+T'/Tux
+R:Shle5 MeG2.C6
+C::|
+<.nSF E2Ac|B2=ef/EA/2
+H:2dz vg!!erg+>geed3f f2de3/2|c4#2484 .f2 qbfe|^bB/f/ eeff 2 gbed |
+{{}b3 | f=fg
+'cg
+g}af|aga' BDB,
+xu.>f e2=e |
+88c^g2.
+c4:|2 g4f d5 {g}afA/~
+cb/a/g/f2g | z2zC 2g>B,|D,F6 : TIB.
+N|EFE,C&::B2 A2:|
+P:Vf
+NUe c0 |A GhE3C 32G6G2|G^FG
+[K=Csga.ez/ d/)B.d.B2.z/c |AFFF~#2|GEdc ccAc,2 ::hRVat).
+W:HpAe.nryd'm/4
+DFLf|de|GF|
+|:
+g4  ffa abg Z: ~O Ff|fadf abefd/>c |d2.c2 | Pe>e Ag"G EFA|D,, D((A/2 7A2:|
+<en-4e
+M:3-f3|14>c |
+<enb-j6|a' g>f A/|-d7|
+c2G A3D||
+GADE/3: (fc). ||
+<en (3E=Fd|
+Icc2 (aga2'Hf |baa'ag|abf gaf |
+T:|G4FG Egfg|1<Anpg/2 =(3F/f/3f dfeb2|
+d>)ec3B 22ac l'e|gfb f (|13de:gG ~kaf G6 ||
+fdd^B zffd|c3B dcd ke|
+H~Mi,2,:ppa20 T8=aMk6Sy,2b DStS[>dyc| 2'e>B2|"U"d2c2
+<:EGcB"2^egdG Pefdfe|
+f2? BAmdc|B AGcBa |:fG~G2 F2dB |
+b2afmage Fdef2efg|~B3e !f(3f
+~^~(| 2:|(3?cf2g! a2!: U6z : 
+<ed):4fDDe/e/./A/ dc>d/4/4|c62=4:|2BAd|gfa|Gd.d2z f@f3g c=b deg ||1
+fgbg caBd d=Bf}cef2 e2a20429|
+<en
+Z:j,2.D|A6Z:TrE2 D.furl/(ne/22/2F/C/F/2
+|
+K{>fdd>b f2ff:|^6cBcc 
+
+
+17. 
+
+Temperature: 2
+Seed Sentence: <start>
+X:88
+T:Fox-trott n?1
+R:Fox-trott
+S:Carnet 
+
+Generated Sequence: 
+<start>
+X:88
+T:Fox-trott n?1
+R:Fox-trott
+S:Carnet drosxpw, M B<an J ewk-
+P!&rauveG E8K(g0-j
+
+.2Gg <2Mamthzht7
+g|fee f.d2 |1 f2g>c F2A,:|2??iz &
+CEg: JaC2 L^ber  2'2 G
+BBd|236 cAB} {afge2 Bc'^c c [R:z1-"bAG,3W<Dn h1ah siamis1R:d9)GFr
+Z:a/g/'puaG, C>Eo.
+pPo^s H?4SZublwe|DBGf/|
+f4D5 (2dcd =f2AA2/c=f2^d2? o eaes afg
+|"T/3A>B BA/I2/G/|F^D/2F/A/f/g/|dc A>=G2_2 AFB :Jaae/4
+<ey Cge.c| jArg aB|ax:B7|g2f2|"G"ms SHere-zD
+~BeegG2 D7|mequaetp.
+W:)
+M:6wh
+Kieam
+g3edg | ++!d>d/2 ):B2: c>czz |=gez 2zA|>2cB'2)g2|
+D2A4 4 c'ca bcAc_Bdf aAf |
+fe{~e2a| g2fa ^dazff
+ | bfBf efdG | e^G^EFC
+L:|4>e e2 g2:|af)bggf B2c !FA
+b3eA2a[a:|2D3|f2cf
+f@fge gaga|f
+[An-3.7] |
+=GAB ABd/2ff/c2AD:|
+|:f3|a2agbalbBGF!^Icgd=va4d2^^]|
+|BAdA begf .
+def|cbanam\s.f._1069h40
+M:6/8"w]njF #424 ||~B3 AFE|GBG : Simi!, C,, DE A<eGf gaa|:e4(e^g/e/e/e/ gf|d) 2 
+d-A~g3 dFF,,|"Ex E<f[= N4-78'4008-|6
+8|=Am|A_BC Gfg|\3)]!^:1(couri-tet2e72
+K:3-Cr"Keth+c|"H\u"Gm2f24.d4|)fg
+dB) {
+|]BeB ffec/2/ LcBc | dd2F AA^^cA|
+fB,2F2en:PBAk|
+Qc6g2 | feAe2^Age^fg|
+82:[(2"EGFF|F2 CI-_ef2h'4
+U:h[PAAc ~g3{~ac>g g4)d
+
+
+18. 
+
+Temperature: 2
+Seed Sentence: <start>
+X:55
+T:Lei courdello
+O:France
+A:Provence
+R
+
+Generated Sequence: 
+<start>
+X:55
+T:Lei courdello
+O:France
+A:Provence
+R:~alany:iF Riinul jO FEFF,F2-4|A.A.t2:|2G GAG2 |
+~'mAy|e4)b|2=f2 2=f2
+W#6Bx #1p>
+C::has) t rh.uremm-nce g2|C/ a/e'e/c/>DG/A/B}:|cD3dG2:12gez : fzD | WiCmuice J gu? I
+O:D4 | d2gaja[^>cd_g dZ:E3P e4Vmin
+M:2e>e]aeB
+T~ffahn\n.
+M:eKqve@Cr6p! eazG"D/4/4
+::3c/2 fBz | b">bgid gfdA =b'bc|AFga agg"F t"gfg|(g>gc/f/|a2D ^3 BA>d (eFdBB,d| [B|E4 {ACB B2cg e)A4g<g3f aEdQ:| [1ffs B A2|b_bgg2|[4edc f~a2 c82zzz|afd B{a}F,2 G|"G26f|gfzG][=FE|.g|(3dRwc!:iK:bbtoe
+D:FDBF:PauvhcAd heA'ru- |
+Q
+B=A:B3 g|"M: Cm
+O^=erd"h#:ip036?7
+f:VAtL: BFc'a
+T:nC,
+U:Ig
+S,fCCC|TFAf^c'3|TIf j,Fg/2de d2c2]='Cand|]
+ d8f AGEA,4 
+MA4:2Czz fF4B:|4\6?-/2p(y,umnfzu#|2^D
+G3f
+gbbaedG4d2 ca~d|egaB d'Egridhngtwon)AjigouB p0ptupcoos.
+K:4
+g6|[b]~a2
+(3CdBGBA fBdd eAgf agfg|ffad | fcggf Gl'b:|d8: (ACS :c8 gedffm|e3v",B,e,:|\ afg daf d:gee{a | dcB^e2 y:CGo\hbnfhi<
+tanand)c#
+9|GGFG|GEdG cdAf|:e4f2~a/2/^ane:. 2 e4-2z4
+.2zd :|d^AF|dBeB AA^f|
+<e#143#22::CE,
+ :anneaR)
+W:zbp?
+P(efbB) \
+|=ef_g fe|anac a2fb|
+~f2c|]
+fec cBd N|u d2zp:
+|df2d4)(edE)|
+Zg4dB
+
+

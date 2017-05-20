@@ -1,0 +1,20 @@
+Temperature: 0.5
+Seed Sentence: <start>
+X:1
+T: La Montfarine
+Z:Transcrit et/ou cor
+
+Generated Sequence: 
+<start>
+X:1
+T: La Montfarine
+Z:Transcrit et/ou corrig? par Michel BELLON - 2005-03-16
+Z:Pour toute observation mailto:galouvielle@free.fr
+M:6/8
+L:1/8
+K:G
+FG | GA GBGE | FAAG | BAGA | f3 f2 | fe dc | a2 fe | e2 e2 | d2 d2 | dc d2 | e2f d2d | ecd c2d | c2c c2B | B2B B2B | B2B B2B | B2A d2B | B2d B2A | d3 B2c | ddc e2d | d2d c2B | B2B A2A | d2c B2c | B2B B2A | A3 B2d | d2B c2B | d2c A2B | B2B A2d | d2e c2A | d2d e2d | d2e d2d | d2e d2B | d3 | G6 | F2A AB | B2B2 | B2B2 | B4 | B2A2 | c2B2 | (3dc2 | c2A2 | c2B2 | c2A2B2 | B2B2B2 | B2B2 A2B2 | B2B2B2 | B2B2 B2 | B2B2B2 | B4c2 | B4 z2 |
+B2 B2 | c2c2 | B2 B2 | B2 B>B | d>B B>B | B/c/B/ | BA BA | c2 cB | c2 zB | B2 B2 | B2 B2 | B2 d c2 | B2 B2 | B2 B2 | B/c/c/d/ d/f/g/ | d2 | c2 | def | de fe | de/2 | g/2c/2 | d2c | B2 c2 | B2 B2 | B2 B2 | G2B2 | B2B2 | B2B2 | d2 B2 | f4-2 | g2e2 | c2d2 | d2f2 | (3c).!!!+!+!=!+!+!+!]"C"m""""""""b"d!b""""""""""""C"C""G""G""G""F"G"G"G"G"G"A"EFE | "C"G"G"dc | "G"=c/2c/2 "F"G2 |"G"B2c2c2 |
+B2G2 |
+c2B2 | B4c2 |
+B2e2 f2 | e2c2 | d4 | c4z2 | =B2B2 | A2d2 | B2z2 | B2A2
