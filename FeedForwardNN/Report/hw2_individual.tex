@@ -1,0 +1,374 @@
+\documentclass{article}
+
+% if you need to pass options to natbib, use, e.g.:
+% \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading nips_2016
+%
+% to avoid loading the natbib package, add option nonatbib:
+% \usepackage[nonatbib]{nips_2016}
+
+\usepackage{nips_2016_2}
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+% \usepackage[final]{nips_2016}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\title{Using Neural Networks to Effectively Classify Hand-Written Digits of the MNIST Dataset}
+
+% The \author macro works with any number of authors. There are two
+% commands used to separate the names and addresses of multiple
+% authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to
+% break the lines. Using \AND forces a line break at that point. So,
+% if LaTeX puts 3 of 4 authors names on the first line, and the last
+% on the second line, try using \AND instead of \And before the third
+% author name.
+
+\author{
+  Chetan Gandotra\thanks{Use footnote for providing further
+    information about author (webpage, alternative
+    address)---\emph{not} for acknowledging funding agencies.} \\
+  Department of Computer Science\\
+  UC San Diego\\
+  San Diego, CA 92093 \\
+  \texttt{cgandotr@ucsd.edu} \\
+}
+
+\author{
+  David S.~Hippocampus\thanks{Use footnote for providing further
+    information about author (webpage, alternative
+    address)---\emph{not} for acknowledging funding agencies.} \\
+  Department of Computer Science\\
+  Cranberry-Lemon University\\
+  Pittsburgh, PA 15213 \\
+  \texttt{hippo@cs.cranberry-lemon.edu} \\
+  %% examples of more authors
+  %% \And
+  Chetan Gandotra \\
+  UC San Diego \\
+  9500 Gilman Drive \\
+  \texttt{cgandotr@ucsd.edu} \\
+  %% \AND
+  %% Coauthor \\
+  %% Affiliation \\
+  %% Address \\
+  %% \texttt{email} \\
+  %% \And
+  %% Coauthor \\
+  %% Affiliation \\
+  %% Address \\
+  %% \texttt{email} \\
+  %% \And
+  %% Coauthor \\
+  %% Affiliation \\
+  %% Address \\
+  %% \texttt{email} \\
+}
+\newcommand\thicktilde{{\lower.74ex\hbox{\texttt{\char`\~}}}}
+\begin{document}
+% \nipsfinalcopy is no longer used
+
+\maketitle
+
+\begin{abstract}
+This report discusses the second programming assignment of our course CSE 253: Neural Networks and Pattern Recognition, its solutions and the inferences we drew. A variable layer neural network was implemented from the scratch and observations were made based on various parameters and before/after adding certain trades of tricks as discussed in Yann LeCun's famous paper "Efficient BackProp". The data-set used was the famous MNIST data-set and a ten-way classification was performed on it. A test data-set accuracy in excess of 97\% was achieved using various mechanisms and tricks, which is almost at par with the accuracy reported by LeCun on his website. This is the individual part of the programming assignment.
+\end{abstract}
+
+\section{Linear Regression and Sum-of-squared Error}
+\subsection{Introduction}
+In linear regression problems, we try to fit the data generated from:
+\begin{align}
+t = h(x) + \epsilon 
+\end{align}
+where $\emph{x}$ is a $\emph{K}$-dimensional vector, $\emph{h(x)}$ is a deterministic function of $\emph{x}$, where $\emph{x}$ includes the bias term $x_0$ and $\epsilon$ is random noise that has a Gaussian probability distribution with zero mean and variance $\sigma^2$, i.e., $\epsilon$ $\thicktilde$ $\mathcal{N}$(0, $\sigma^2$). Now, consider $\emph{y}$ to be of form 
+\begin{align}
+y = \sum_{i=1}^K w_i.x_i 
+\end{align}
+We need to prove that finding the optimal parameter $\emph{w}$ for the above linear regression problem on the dataset D = {($x^1, t^1$), ($x^2, t^2$), ..., ($x^N, t^N$)} is equal to finding the $w^*$ that minimizes the sum of squared error (SSE):
+\begin{align}
+w^* = argmin_w \sum_{n=1}^N(t^n - y^n)^2 
+\end{align}
+
+\subsection{Methodology}
+In this section, we will prove that finding the optimal parameter $\emph{w}$ for the above linear regression problem on the dataset D = {($x^1, t^1$), ($x^2, t^2$), ..., ($x^N, t^N$)} is equal to finding the $w^*$ that minimizes the sum of squared error (SSE):
+\begin{align}
+w^* = argmin_w \sum_{n=1}^N(t^n - y^n)^2 
+\end{align}
+
+To begin with, we look at (1). We are saying that the actual label is equal to the predicted label, plus some noise $\epsilon$. Now, we are given that the noise $\epsilon$ has a Gaussian probability distribution with zero mean and variance $\sigma^2$, i.e., $\epsilon$ $\thicktilde$ $\mathcal{N}$(0, $\sigma^2$). 
+
+Modifying (1), we can write:
+\begin{align}
+\epsilon  = h(x) - t
+\end{align}
+
+Also, the Gaussian distribution for $\epsilon$ can be written as:
+\begin{align}
+p(\epsilon) = \frac{1}{(2\pi\sigma^2)^{1/2}}exp(- \frac{\epsilon^2}{2\sigma^2})
+\end{align}
+Substituting value of $\epsilon$ from (5) and putting $\emph{h(x)}$ = $\emph{y}$ (which corresponds to the model we are using), we get:
+\begin{align}
+p(\epsilon) = \frac{1}{(2\pi\sigma^2)^{1/2}}exp(- \frac{(y - t)^2}{2\sigma^2})
+\end{align}
+For least error, the probability of predicting a label must be maximized, when provided with the corresponding input features $\emph{X}$. This is repeated for all training examples from 1 to $\emph{N}$ and hence, we end up taking the multiplication of all probabilities. In a nutshell, we can maximize the probability of correct prediction by finding weights $\emph{w}$ such that the following expression is maximized:
+$$max_{w} \prod_{n=1}^N \frac{1}{\sigma (2\pi)^{1/2}}exp(-\frac{(t_n - y_n)^2}{2\sigma^2})$$
+The above maximization objective follows from (2), which contains $\emph{w}$. Removing the constant terms,
+$$=max_{w} \prod_{n=1}^N exp(-(t_n - y_n)^2)$$
+Taking log and converting maximization objective to minimize by discarding the negative sign, we get:
+$$=min_{w} \sum_{n=1}^N (t_n - y_n)^2$$
+$$=argmin_{w} \sum_{n=1}^N (t_n - y_n)^2$$
+which is essentially the same as equation (4).
+
+\subsection{Results}
+Using the derivation described above, we have proved that finding the optimal parameter $\emph{w}$ for the above linear regression problem on the dataset D = {($x^1, t^1$), ($x^2, t^2$), ..., ($x^N, t^N$)} is equal to finding the $w^*$ that minimizes the sum of squared error (SSE):
+$$
+w^* = argmin_w \sum_{n=1}^N(t^n - y^n)^2 
+$$
+\subsection{Discussion}
+Adjusting the weight vector to get maximum probability of finding the correct label is equivalent to minimizing the sum of squared error. This is true because in both the cases we are trying to reduce the number of mistakes by reducing the distance between actual and predicted values. A good classifier must have less sum of squared error or maximum probability of the label being correct, and for these two statements being equivalent makes sense. 
+\newpage
+
+\section{Derivation of Delta's, Update Rule and Vectorization}
+\subsection{Introduction}
+In this question, we have been given a three layer neural network with $\emph{J}$ units in the hidden layer. We use index $\emph{k}$ to represent a node in output layer, index $\emph{j}$ to represent a node in hidden layer and index $\emph{i}$ to represent a node in the input layer. Additionally, the weight from node $\emph{i}$ in the input layer
+to node $\emph{j}$ in the hidden layer is $w_{ij}$. Similarly, the weight from node $\emph{j}$ in the hidden layer to node $\emph{k}$ in the
+output layer is $w_{jk}$. 
+
+Firstly, we are required to derive the expression for $\delta$ for both the units of output layer ($\delta_k$) and the hidden layer ($\delta_j$). The definition of $\delta$ here is $\delta_i = - \frac{\partial E}{\partial a_i}$, where $a_i$ is the weighted sum of the inputs to unit $\emph{i}$.
+
+Second, we need to derive the update rule for $w_{ij}$ and $w_{jk}$ using learning rate $\eta$, starting with the gradient descent rule:
+\begin{align}
+w_{ij} = w_{ij} - \eta \frac{\partial E}{\partial w_{ij}}
+\end{align}
+\begin{align}
+\frac{\partial E}{\partial w_{ij}} = \frac{\partial E}{\partial a_{j}} \frac{\partial a_j}{\partial w_{ij}}
+\end{align}
+The derivative should take into account all of the outputs, so:
+\begin{align}
+\delta_j = - \frac{\partial E^n}{\partial a_{j}^n} = \sum_{k} \frac{\partial E^n}{\partial y_{k}} \frac{\partial y_{k}}{\partial a_{j}}
+\end{align}
+
+Finally, we have been asked to write these equations in a vectorized form.
+
+\subsection{Methodology}
+For the first part for this question, we are required to derive expressions for $\delta_k$ and $\delta_j$, where $\delta_i = - \frac{\partial E}{\partial a_{i}}$
+We know that:
+\begin{align}
+a_k = \sum_{j} w_{ij}z_{j}
+\end{align}
+Also, 
+$$
+\delta_{k}^n = -\frac{\partial E^n}{\partial a_{k}}$$
+\begin{align}
+=> \delta_{k}^n = -\sum_{m=1}^C \frac{\partial E^n}{\partial y_{m}^n}.\frac{\partial y_{m}^n}{\partial a_{k}^n}
+\end{align}
+Now, we know that the error for $n^{th}$ example - $E^n$ can be written as:
+$$E^n = - \sum_k t_k^n.ln(y_k^n)$$
+Taking derivative with respect to $y_k$,
+$$=> \frac{\partial E^n}{\partial y_{k}} = -t_k^n.\frac{1}{y_k^n}.1$$
+\begin{align}
+=> \frac{\partial E^n}{\partial y_{k}} = -\frac{t_k^n}{y_k^n}
+\end{align}
+Also, since $$y_{l}^{n} = \frac{e^{a_l^n}}{\sum_{m=1}^{C} e^{a_m^n}}$$ it will have different derivatives when $l = k$ and when $l \neq k$. Thus, the derivatives $\frac{\partial y_{k}^{n}}{\partial a_{k}}$ and $\frac{\partial y_{k^{'}}^{n}}{\partial a_{k}}$ ($l \neq k$ case) can be written as:
+
+$$\frac{\partial y_{k}^{n}}{\partial a_{k}} = \frac{e^{a_k^n}}{\sum_{m=1}^{C} e^{a_m^n}} - e^{a_k^n} \left[ \frac{1}{(\sum_{m=1}^{C} e^{a_m^n})^{2}} \right] e^{a_k^n}$$
+
+\begin{align}
+\frac{\partial y_{k}^{n}}{\partial a_{k}} = y_{k}^{n}(1 - y_{k}^{n})
+\end{align}
+And,
+$$\frac{\partial y_{k^{'}}^{n}}{\partial a_{k}} = - e^{a_{k'}^n} e^{a_{k'}^n} \frac{1}{(\sum_{m=1}^{C} e^{a_m^n})^{2}} $$
+
+\begin{align}
+\frac{\partial y_{k'}^{n}}{\partial a_{k}} = - (y_{k'}^{n})^{2}
+\end{align}
+Putting (13), (14) and (15) in (12),
+$$\delta_{k}^n = - \frac{\partial E^{n}}{\partial a_{k}^{n}} = -\sum_{l=1 \& l \neq k}^{C} (\frac{t_l^{n}}{y_l^{n}} (y_{l}^{n})^{2}) - (\frac{t_k^{n}}{y_k^{n}} (y_{k}^{n}(1 - y_{k}^{n})))$$ 
+
+\begin{align}
+\delta_{k}^n = -\sum_{l=1 \& l \neq k}^{C}(t_l^{n}y_{k}^{n}) - (t_k^{n}(1 - y_{k}^{n}))
+\end{align}
+
+Following the one hot representation, only one of the labels from $l=1$ to $C$ in $t^{n}$ would be 1 and all the others would be 0.
+Therefore, for input term $u$ where $t^{u}_{k}$ is 1, the derivative becomes:
+
+$$\frac{\partial E^{u}}{\partial a_{k}^{u}} = y_{k}^{u} - 1$$
+\begin{align}
+=>\frac{\partial E^{u}}{\partial a_{k}^{u}} = y_{k}^{u} - t_{k}^{u}
+\end{align}
+
+For input term $v$ where some $t^{n}_{k'}$ is 1 such that $k' \neq k$, this term becomes:
+$$\frac{\partial E^{v}}{\partial a_{k}^{v}} = y_{k}^{v}$$ 
+\begin{align}
+=>\frac{\partial E^{v}}{\partial a_{k}^{v}} = y_{k}^{v} - t^{v}_{k} 
+\end{align}
+Therefore, combining both the cases together, we can form an expression for $\delta_k^n$ as:
+\begin{align}
+\delta_k^n = - \frac{\partial E^{n}}{\partial a_{k}^{n}} = t^{n}_{k} - y_{k}^{n}
+\end{align}
+
+Now, we wish to derive an expression for $\delta_j$. Note that the derivation below is taken from Professor Gary's class notes. 
+
+We have,
+$$
+\delta_{j}^{n} = - \frac{\partial E^{n}}{\partial a_{j}^{n}} $$
+Using chain rule and summation over all labels,
+$$
+\delta_{j}^{n} = - \sum_{k=1}^{C} \frac{\partial E^{n}}{\partial y_{k}^{n}} \frac{\partial y_{k}^{n}}{\partial a_{j}^{n}} 
+$$
+$$
+=> \delta_{j}^{n} = - \sum_{k=1}^{C} \frac{\partial E^{n}}{\partial y_{k}^{n}} \frac{\partial y_{k}^{n}}{\partial y_{j}^{n}} \frac{\partial y_{j}^{n}}{\partial a_{j}^{n}}
+$$
+Taking the terms independent of $k$ outside of summation,
+$$
+=> \delta_{j}^{n} = - \frac{\partial y_{j}^{n}}{\partial a_{j}^{n}} \sum_{k=1}^{C} \frac{\partial E^{n}}{\partial y_{k}^{n}} \frac{\partial y_{k}^{n}}{\partial y_{j}^{n}}
+$$
+Using chain rule again,
+$$
+=> \delta_{j}^{n} = - \frac{\partial y_{j}^{n}}{\partial a_{j}^{n}} \sum_{k=1}^{C} \frac{\partial E^{n}}{\partial y_{k}^{n}} \frac{\partial y_{k}^{n}}{\partial a_{k}^{n}} \frac{\partial a_{k}^{n}}{\partial y_{j}^{n}}
+$$
+Combining terms using chain rule, we get:
+\begin{align}
+=> \delta_{j}^{n} = - \frac{\partial y_{j}^{n}}{\partial a_{j}} \sum_{k=1}^{C} \frac{\partial E^{n}}{\partial a_{k}^{n}} \frac{\partial a_{k}^{n}}{\partial y_{j}^{n}}
+\end{align}
+
+Since, 
+$$a^{n}_{k} = \sum_{j} w_{jk} y_{j}$$ 
+we can write the derivative $\frac{\partial a_{k}^{n}}{\partial y_{j}^{n}}$ as:
+
+$$\frac{\partial a_{k}^{n}}{\partial y_{j}^{n}} = w_{jk}$$
+Substituting in (20):
+\begin{align}
+\delta_{j}^{n} = - \frac{\partial y_{j}^{n}}{\partial a_{j}^{n}} \sum_{k=1}^{C}  \delta_{k} w_{jk}
+\end{align}
+
+Since we are using the sigmoid function as activation, we can say that: 
+$$ y_{j}^{n} = \sigma(a_{j}^{n})$$
+$$=> \frac{\partial y_{j}^{n}}{\partial a_{j}^{n}} = \sigma(a_{j}^{n}) (1 - \sigma(a_{j}^{n})) $$
+$$
+=>\frac{\partial y_{j}^{n}}{\partial a_{j}^{n}} = y_{j}^{n}(1 - y_{j}^{n})$$
+
+Substituting back in equation (21):
+$$\delta_{j}^{n} = - y_{j}^{n}(1 - y_{j}^{n}) \sum_{k=1}^{C}  \delta_{k} w_{jk}$$
+which can also be written as: (without substituting value of $\frac{\partial y_{j}^{n}}{\partial a_{j}^{n}}$, as done in class):
+$$\delta_{j}^{n} = - \frac{\partial y_{j}^{n}}{\partial a_{j}^{n}} \sum_{k}\delta_{k} w_{jk}$$
+
+For the final part of this problem, we need to derive the update rule for $w_{ij}$ and $w_{jk}$.
+
+Looking at the update rule for $w_{jk}$ first, we have: 
+$$
+w_{jk} = w_{jk} - \eta \frac{\partial E}{\partial w_{jk}}
+$$
+Using chain rule,
+$$
+=> w_{jk} = w_{jk} - \eta \frac{\partial E}{\partial a_{k}} \frac{\partial a_{k}}{\partial w_{jk}}
+$$
+Since we need to repeat this for all data points,
+$$
+=> w_{jk} = w_{jk} - \eta \sum_{n=1}^{N} \frac{\partial E^{n}}{\partial a_{k}^{n}} \frac{\partial a_{k}^{n}}{\partial w_{jk}}
+$$
+
+From the definitions of $\delta_k$ and $z_j$, we can write:
+\begin{align}
+=> w_{jk} = w_{jk} + \eta \sum_{n=1}^{N} \delta_{k}^{n} z_{j}^{n}
+\end{align}
+From equations derived above for previous parts of question 2, we have:
+\begin{align}
+=> w_{jk} = w_{jk} + \eta \sum_{n=1}^{N} (t_{k}^{n} - y_{k}^{n}) z_{j}^{n}
+\end{align}
+
+Similarly, we need to work for the update rule for $w_{ij}$. Using the generic rule, we have:
+
+$$
+w_{ij} = w_{ij} - \eta \frac{\partial E}{\partial w_{ij}}
+$$
+Using chain rule, 
+$$
+=> w_{ij} = w_{ij} - \eta \frac{\partial E}{\partial a_{j}} \frac{\partial a_{j}}{\partial w_{ij}}
+$$
+Changing to summation over all input points form, we get:
+$$
+=> w_{ij} = w_{ij} - \eta \sum_{n=1}^{N} \frac{\partial E^{n}}{\partial a_{j}^{n}} \frac{\partial a_{j}^{n}}{\partial w_{ij}}
+$$
+Substituting the value of $\delta_j$, as computed previously,
+\begin{align}
+=> w_{ij} = w_{ij} + \eta \sum_{n=1}^{N} \delta_{j}^{n} z_{i}^{n}
+\end{align}
+
+$$
+=> w_{ij} = w_{ij} + \eta \sum_{n=1}^{N} y_{j}^{n}(y_{j}^{n} - 1) \sum_{k=1}^{C}  \delta_{k}^{n} w_{jk} z_{i}^{n}
+$$
+
+\begin{align}
+=> w_{ij} = w_{ij} + \eta \sum_{n=1}^{N} y_{j}^{n}(y_{j}^{n} - 1) \sum_{k=1}^{C}  (t_{k}^{n} - y_{k}^{n}) w_{jk} z_{i}^{n}
+\end{align}
+
+Finally, we have been asked to write the vector representation of the equations we just derived. 
+
+Let $X$ be the input matrix of dimension $N$ x $I$, where $I$ is the number of input features and $N$ is the number of examples in our data-set. Note that if we add the bias term as well, the dimension of $X$ changes to $N$ x $(I+1)$. We define $W_{ij}$ as the weights matrix from input layer to hidden layer, having dimensions $(I+1)$ x $J$. Similarly, we have another weights matrix $W_{jk}$ which includes weights from the hidden layer to the output layer. Given the matrix form, a row in $W$ matrix holds weight parameters from that starting unit to all units in the next layer.
+
+Continuing our general representation, we define $Z^l$ as the output of layer $l$. Thus, we can write:
+$$Z^1 = X$$ 
+$$A^{l+1} = W^lZ^l$$ 
+$$Z^{l+1} = \sigma(A^{l+1})$$
+where $W^l$ is $W_{ij}$ when $l = 0$ and $W_{jk}$ when $l = 1$. Note that we can have used $\sigma$ or the sigmoid activation function above while it can be generalized for any other activation function as well.
+
+Now, we re-write our update rules from equations (22) and (24) generically using a vectorized form as follows:
+\begin{align}
+W^{l} = W^{l} + \eta(\delta^{l+1}(Z^l)^T)
+\end{align}
+[As stated above, $W^l$ is $W_{ij}$ when $l = 0$ and $W_{jk}$ when $l = 1$]
+where
+\begin{align}
+\delta^{l} = (W^{l})^T \delta^{l+1} .* \sigma'(Z^l)
+\end{align}
+and $\delta$ for last layer (output) is $\delta^k$, written as:
+\begin{align}
+\delta^{k} = T - Y
+\end{align}
+In (27), the operator $.*$ means element wise product. In (28), $T$ is the actual output whereas $Y$ is the output predicted by our model, and is obtained using the $Z$ value of last layer. 
+
+\subsection{Results}
+We derived the expression for $\delta_k^n$ as:
+$$ \delta_k^{n} = t^{n}_{k} - y_{k}^{n}$$
+and the expression for $\delta_j^n$ as:
+$$\delta_{j}^{n} = - \frac{\partial y_{j}^{n}}{\partial a_{j}^{n}} \sum_{k}\delta_{k} w_{jk}$$
+
+The update rule for $w_{ij}$ is given as:
+$$
+w_{ij} = w_{ij} + \eta \sum_{n=1}^{N} y_{j}^{n}(y_{j}^{n} - 1) \sum_{k=1}^{C}  (t_{k}^{n} - y_{k}^{n}) w_{jk} z_{i}^{n}
+$$
+and that for $w_{jk}$ is written as:
+$$
+w_{jk} = w_{jk} + \eta \sum_{n=1}^{N} (t_{k}^{n} - y_{k}^{n}) z_{j}^{n}
+$$
+
+The vectorized form of update rule can be written as:
+$$
+W^{l} = W^{l} + \eta(\delta^{l+1}(Z^l)^T)
+$$
+where
+$$
+\delta^{l} = (W^{l})^T \delta^{l+1} .* \sigma'(Z^l)
+$$
+and 
+$$
+\delta^{k} = T - Y
+$$
+\subsection{Discussion}
+All the results above seem to be self explanatory and are derived mathematically using known facts. The expressions above are hence genuine and will be used by us for the remaining of this report. The computation is much faster when we update all $w_{ij}$s and $w_{jk}$s at the same time using matrix multiplications rather than $\textbf{for}$ loops. 
+\newpage
+\end{document}
